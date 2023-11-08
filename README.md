@@ -1,6 +1,6 @@
 # Interview Questions:
 
-##### 1. What are some benefits of using TypeScript over JavaScript in a project?
+### **1. What are some benefits of using TypeScript over JavaScript in a project?**
 
 - **type safety**
   Using typescript in a project will be beneficial because of `type safety`. Type safety ensures that code is more predictable and there is no unexpected value which might be causes bugs.<br><br>
@@ -13,7 +13,7 @@
 
 All of these benefits can possible if we use typeScript over javaScript in a project.
 
-##### 2. What is the purpose of the optional chaining (?.) and nullish coalescing (??) operators in TypeScript, and how do they work? Provide an example for each
+### **2. What is the purpose of the optional chaining (?.) and nullish coalescing (??) operators in TypeScript, and how do they work? Provide an example for each**
 
 - **optional chaining (?.)**
   Typescript allows us to make a `type` object with optional properties. So that an object has a property sometimes and sometimes can't.
@@ -91,7 +91,7 @@ All of these benefits can possible if we use typeScript over javaScript in a pro
 
   So, the nullish coalescing (??) operator is useful to handle null or undefined values to avoid unexpected operations on them.
 
-##### 3. How do you handle asynchronous operations in TypeScript, and what are the advantages of using async/await over callbacks or Promises?.
+### **3. How do you handle asynchronous operations in TypeScript, and what are the advantages of using async/await over callbacks or Promises?.**
 
 Using `async/await` is introduced in ES6, because, it's to complecated and difficult to handle while too many nested asynchronous operations. `async/await` is more simpler and look like synchronous code but nested callbacks make `callback hell` issue which is difficult to debug.
 
@@ -133,7 +133,7 @@ const getData = async (): Promise<string> => {
 
 Handle promise using async/await is simple and using try/catch for error handle. Inside the try block, using await which is expected to return a string when resolved. If any error happend during asynchronous operation then our code jumps to the catch block to handle error and return the error message. This is the simple structure to handle asynchronous operations in TypeScript.
 
-##### 4. How can you use TypeScript's enums, and what are their advantages?.
+### **4. How can you use TypeScript's enums, and what are their advantages?.**
 
 `enum` is a set of named values where it represents constants/options/categories. If an application uses a few categories repeatedly, it is good to store them in a central place and use them. `enum` plays a similar role in keeping these values into it, and uses throughout the enum.
 
@@ -177,7 +177,7 @@ const myTask: Task = {
 
 Now, enum helps us to code becomes more readable and it will give errors at compile time if try to use an invalid value.
 
-##### 5. Explain the role of type guards in TypeScript and provide an example of a custom type guard.
+### **5. Explain the role of type guards in TypeScript and provide an example of a custom type guard.**
 
 `type guard` is a technique where we ensure that our provided value type is doing expected operations. It is useful for some cases, such as if a function receives a argument type is `unknown` then we use type guard before doing any operation on it. Otherwise, string operation causes error for number value and vice versa.
 
@@ -280,7 +280,7 @@ Now, enum helps us to code becomes more readable and it will give errors at comp
   };
   ```
 
-##### 6. Can you give an example of how to use "readonly" properties in TypeScript?
+### **6. Can you give an example of how to use "readonly" properties in TypeScript?**
 
 `readonly` is an access modifier for object type, which is ensures a property is readonly means we can only read the property value and can't mutate or insert new value.
 
@@ -306,7 +306,7 @@ user1.name = "Sarkar"; // not allowed
 
 We can also use this readonly access modifier in `class` & `interface` because all of them are for creating an object.
 
-##### 7. Explain what a union type is in TypeScript and provide an example of its usage.
+### **7. Explain what a union type is in TypeScript and provide an example of its usage.**
 
 `union` type is typescript's own type, which is create a custome type with multiple types. So, we can use multiple types to create a new type.
 from exmple, We need a type which is allow to a value as a number or as a string.
